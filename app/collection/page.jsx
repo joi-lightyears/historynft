@@ -1,5 +1,5 @@
-import React from 'react'
 import "../../styles/collectionPage.scss"
+import Image from 'next/image'
 
 export default function Collection(){
     return (
@@ -31,7 +31,7 @@ export default function Collection(){
                 <div className="storeWrapper">
                     <div className="left">
                         <span>
-                            <img src="https://res.cloudinary.com/dpaccount/image/upload/w_800,q_40,b_rgb:090909,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/packs" alt="" />
+                            <Image src="https://res.cloudinary.com/dpaccount/image/upload/w_800,q_40,b_rgb:090909,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/packs" width={500} height={500} alt="" />
                         </span>
                     </div>
                     <div className="right">
@@ -49,7 +49,7 @@ export default function Collection(){
                                     <div className="content">
                                         <div className="rleft">
                                             <span>
-                                                <img src="https://res.cloudinary.com/dpaccount/image/upload/w_150,q_40,b_rgb:171717,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/pack1" alt="" />
+                                                <Image src="https://res.cloudinary.com/dpaccount/image/upload/w_150,q_40,b_rgb:171717,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/pack1" width={500} height={500} alt="" />
                                             </span>
                                         </div>
                                         <div className="middle">
@@ -72,7 +72,7 @@ export default function Collection(){
                                     <div className="content">
                                         <div className="rleft">
                                             <span>
-                                                <img src="https://res.cloudinary.com/dpaccount/image/upload/w_150,q_40,b_rgb:171717,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/pack1" alt="" />
+                                                <Image src="https://res.cloudinary.com/dpaccount/image/upload/w_150,q_40,b_rgb:171717,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/pack1" width={500} height={500} alt="" />
                                             </span>
                                         </div>
                                         <div className="middle">

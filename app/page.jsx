@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import "../styles/home.scss"
-import React from 'react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -57,7 +56,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
@@ -76,7 +75,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
@@ -95,7 +94,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
@@ -114,7 +113,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
@@ -133,7 +132,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
@@ -152,7 +151,7 @@ export default function Home() {
               <Link href="/collection" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <img src="/img/joitaro.jpg" alt="" />
+                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
