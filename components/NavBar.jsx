@@ -9,7 +9,7 @@ function NavBar() {
                 <div className="navBarLeft">
                     <div className="navBarLeftLogo">
                         <a href="">
-                            <Image src="/img/VSKH_logo_menu.png" width={40} height={40}/>
+                            <Image src="/img/VSKH_logo_menu.png" width={40} height={40} alt=''/>
                         </a>
                     </div>
                     <div className="navBarLeftLinks">

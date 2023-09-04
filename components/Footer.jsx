@@ -1,5 +1,6 @@
 import "../styles/footer.scss";
 import React from 'react';
+import Image from "next/image";
 
 function Footer() {
     return (
@@ -8,7 +9,7 @@ function Footer() {
                 <a href="">
                     <div >
                         <div className="logo">
-                            <img src="/img/VSKH_logo_menu.png" alt="" />
+                            <Image src="/img/VSKH_logo_menu.png" alt="" width={500} height={500}/>
                         </div>
                     </div>
                 </a>
