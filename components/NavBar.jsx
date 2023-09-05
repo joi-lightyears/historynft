@@ -1,6 +1,7 @@
 // import logo img
 import Image from 'next/image'
 import "../styles/navbar.scss"
+import Link from 'next/link';
 
 function NavBar() {
     return (
@@ -8,21 +9,21 @@ function NavBar() {
             <div className="navBar">
                 <div className="navBarLeft">
                     <div className="navBarLeftLogo">
-                        <a href="">
+                        <Link href="/">
                             <Image src="/img/VSKH_logo_menu.png" width={40} height={40} alt=''/>
-                        </a>
+                        </Link>
                     </div>
                     <div className="navBarLeftLinks">
-                        <a href="#">
+                        <Link href="/collections">
                             <span>
-                                Drops
+                                Collections
                             </span>
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link href="/support">
                             <span>
                                 Supports
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="navBarRight">

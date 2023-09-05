@@ -1,18 +1,19 @@
 import "../styles/footer.scss";
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
     return (
         <footer>
             <div className="left">
-                <a href="">
+                <Link href="/">
                     <div >
                         <div className="logo">
                             <Image src="/img/VSKH_logo_menu.png" alt="" width={60} height={60}/>
                         </div>
                     </div>
-                </a>
+                </Link>
                 <ul>
                     <li>Collections</li>
                     <li>FAQ</li>
