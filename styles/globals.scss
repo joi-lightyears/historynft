@@ -23,10 +23,7 @@ body, html{
     color: #ffffff;
 }
 
-  
-::selection {
-    background: #E28B31;
-}
+
 // responsive
 @mixin mobile{
     @media screen and (max-width:480px){
