@@ -27,6 +27,62 @@ export default function Collection(){
                 </div>
             </section>
 
+            <section className="showCaseContainer">
+                <div className="wrapper">
+                    <div className="charactersContainer">
+                        <div className="character">
+                            <span>
+                                <Image src="https://res.cloudinary.com/dpaccount/image/upload/w_1128,q_60,f_auto/prod/drops/129-AD666F63-D55B-4230-912D-D703B9253B8C/grail-hero" width={500} height={500} alt=""/>
+                            </span>
+                        </div>
+
+                        <div className="cardsPreview">
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            <div className="card">
+                                <Image src="/img/cardPreview.gif" width={500} height={500} alt=""/>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div className="infoContainer">
+                        <h2>
+                            Collect Digital
+                            <br/>
+                            Land a physical
+                        </h2>
+                        <p>
+                            Collect Digital History!™ and progress toward landing physical collectibles 
+                            designed exclusively for this drop. There are a handful of ways to land 
+                            physical collectibles. Dive in to learn more.
+                        </p>
+                        <div className="btnsContainer">
+                            <button className="btn">
+                                <span>How it works</span>
+                            </button>
+                            <a href="" className="btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-1"><path d="M18.82 8.581a1.665 1.665 0 0 0-1.761.486 1.684 1.684 0 0 0-.266 1.814c-1.596 1.45-3.071 2.525-3.848 2.275-1.006-.323-.247-3.035.736-5.509a1.819 1.819 0 0 0 2.009-1.253 1.83 1.83 0 0 0-.921-2.188 1.814 1.814 0 0 0-2.295.574 1.834 1.834 0 0 0 .21 2.367c-1.307 2.376-2.667 4.434-3.86 4.086l-.042-.01c-1.2-.386-1.12-2.865-.807-5.58a1.828 1.828 0 0 0 1.572-1.78A1.821 1.821 0 0 0 6 3.24c-.29.854.081 1.792.875 2.212-.632 2.585-1.583 5.235-2.589 4.911-.77-.248-1.346-1.972-1.807-4.073a1.681 1.681 0 0 0 .785-1.967 1.67 1.67 0 0 0-1.759-1.17A1.674 1.674 0 0 0 .01 4.643a1.678 1.678 0 0 0 1.344 1.825l.297 7.048 11.612 3.746 4.33-5.572a1.664 1.664 0 0 0 1.856-.261 1.683 1.683 0 0 0-.626-2.85l-.002.001Z" fill="currentColor"></path></svg>
+                                View physicals collectibles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="store">
                 <div className="storeWrapper">
                     <div className="left">
