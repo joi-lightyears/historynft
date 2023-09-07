@@ -548,3 +548,50 @@
         }
     }
 }
+.cardsPreview{
+    
+}
+
+@keyframes holoSparkle {
+    0% {
+        opacity: 0;
+    }
+    12% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    95% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes holoGradient {
+    3% {
+        opacity: 0;
+    }
+    5% {
+        background-position: 0% 0%;
+    }
+    7% {
+        opacity: 0.5;
+    }
+    9% {
+        background-position: 100% 100%;
+    }
+    11% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        background-position: 100% 100%;
+    }
+    55% {
+        opacity: 0.3;
+    }
+    70% {
+        opacity: 0;
+        background-position: 0% 0%;
+    }
+}

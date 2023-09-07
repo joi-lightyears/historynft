@@ -41,6 +41,12 @@ export default function Project() {
                         <div className="date">20 days remain</div>
                         <div className="progress">85% success</div>
                     </div>
+                    <div className="buttonsContainer">
+                        <Link href="/collections">
+                            <button className="btn1">Pay NFT Package</button>
+                        </Link>
+                        <button className="btn2">Pre-Staking NFTs</button>
+                    </div>
                 </div>
             </div>
             {isOpen && 
