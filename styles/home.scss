@@ -262,7 +262,7 @@
                     &::before{
                         -webkit-clip-path: circle(0);
                         clip-path: circle(0);
-                        content: "All Collections";
+                        content: "All Projects";
                         position: absolute;
                         transition: -webkit-clip-path .2s cubic-bezier(.32,.94,.6,1);
                         transition: clip-path .2s cubic-bezier(.32,.94,.6,1);
@@ -293,11 +293,11 @@
                 margin-bottom: 64px;
                 display: grid;
                 gap: 24px;
-                grid-template-columns: repeat(4, minmax(0px, 1fr));
+                grid-template-columns: repeat(3, minmax(0px, 1fr));
                 .collectionCard{
                     color: inherit;
                     display: flex;
-                    aspect-ratio: 338/450;
+                    aspect-ratio: 338/355;
                     --tw-translate-x: 0;
                     --tw-translate-y: 0;
                     --tw-rotate: 0;
@@ -326,10 +326,12 @@
                         flex: 1 1 0%;
                         .top{
                             display: flex;
-                            aspect-ratio: 338/304;
+                            // aspect-ratio: 338/304;
+                            aspect-ratio: 338/235;
                             img{
                                 width: 100%;
                                 height: 100%;
+                                aspect-ratio: 338/235;
                                 object-fit: cover;
                             }
                         }
@@ -376,6 +378,7 @@
                                             line-height: 14px;
                                             color: rgb(163 163 163);
                                             font-weight: 500;
+                                            margin-top: 10px;
                                         }
                                     }
                                 }

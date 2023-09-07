@@ -14,9 +14,9 @@ function NavBar() {
                         </Link>
                     </div>
                     <div className="navBarLeftLinks">
-                        <Link href="/collections">
+                        <Link href="/projects">
                             <span>
-                                Collections
+                                Projects
                             </span>
                         </Link>
                         <Link href="/support">

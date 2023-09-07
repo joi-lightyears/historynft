@@ -1,0 +1,109 @@
+.projectsContainer{
+    margin-top: 100px;
+    padding: 0 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1248px;
+    .collectionsListWrapper{
+        .collectionsList{
+            margin-top: 32px;
+            margin-bottom: 64px;
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            .collectionCard{
+                color: inherit;
+                display: flex;
+                aspect-ratio: 338/355;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                transform: translate3d(var(--tw-translate-x),var(--tw-translate-y),0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                transition-property: transform;
+                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                transition-duration: .4s;
+
+                &:hover{
+                    --tw-scale-x: 1.05;
+                    --tw-scale-y: 1.05;
+                    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+                }
+                .contentContainer{
+                    border-radius: 30px;
+                    border-color: rgb(36 36 36);
+                    border-width: 1px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 0%;
+                    .top{
+                        display: flex;
+                        // aspect-ratio: 338/304;
+                        aspect-ratio: 338/235;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            aspect-ratio: 338/235;
+                            object-fit: cover;
+                        }
+                    }
+                    .bottom{
+                        background-color: rgb(23 23 23);
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1 1 0%;
+                        justify-content: center;
+                        .content{
+                            margin: 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            justify-content: center;
+                            .collectionName{
+                                height: 21px;
+                                padding: 9px;
+                                text-transform: uppercase;
+                                font-weight: 800;
+                                border: 1px solid rgb(255 255 255);
+                                border-radius: 12px;
+                                display: inline-flex;
+                                align-items: center;
+                                align-self: flex-start;
+                                span{
+                                    font-size: 9px;
+                                }
+                            }
+                            .title{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                gap: 8px;
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 900;
+                                    line-height: 16px;
+                                    width: 100%;
+                                    text-transform: uppercase;
+                                    color: #ffffff;
+                                    &:nth-child(2){
+                                        font-size: 12px;
+                                        line-height: 14px;
+                                        color: rgb(163 163 163);
+                                        font-weight: 500;
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

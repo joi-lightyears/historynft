@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import "../styles/home.scss"
 import Link from 'next/link'
+import ProgressBar from '@/components/ProgressBar'
 
 export default function Home() {
   return (
@@ -11,10 +12,9 @@ export default function Home() {
           <div className="bannerContent">
             <div className="bannerContentText">
               <h1>Viet Nam <span className="bannerContentTextName">NFT</span></h1>
-              <p>Bringing your favorite history of VietNam to life. 
-                Don't miss out on this collection, It's out of this world!
+              <p>Explore Vietnam's NFT scene, where crowdfunding drives digital art innovation.
               </p>
-              <button>Learn more</button>
+              <button>Donate now</button>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
               Let's join us
             </h2>
             <p className="desc">
-            Join the digital collecting phenomenon and begin collecting the world’s most beloved pop culture collectibles, digitally and physically.
+              Join us today by creating an account and become a part of our vibrant NFT community in Vietnam. Your journey into the world of digital art and crowdfunding starts here!
             </p>
             <div className="btnsContainer">
               <button className="btnCreateAcc">Create Account</button>
@@ -47,134 +47,82 @@ export default function Home() {
             <div className="icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4"><path d="M13.5323 4.74365L19.8624 6.64386C21.1126 6.97887 21.8546 8.26398 21.5196 9.51424L18.4867 20.8332C18.1517 22.0835 16.8666 22.8254 15.6163 22.4904L8.82494 20.6707C7.98759 20.4463 7.37824 19.7958 7.16772 19.015" stroke="currentColor" strokeWidth="1.5"></path><rect x="2.3999" y="2.40002" width="11.7183" height="16.4924" rx="2" stroke="currentColor" strokeWidth="1.5"></rect></svg>
             </div>
-            <h2>Latest Collections</h2>
-            <p>Join in on these exciting new collections</p>
+            <h2>Latest Projects</h2>
+            <p>Explore the latest projects and donate to support the artists.</p>
           </div>
 
           <div className="collectionsListWrapper">
             <div className="collectionsList">
-              <Link href="/collection" className="collectionCard">
+              <Link href="/project" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
+                    <Image src="/img/binhNgoDaiChienCrowd.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
                       <div className="collectionName">
-                        <span>Series 1</span>
+                        <span>Video</span>
                       </div>
                       <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
+                        <p>Crowdfunding for "Binh Ngo Dai Chien"</p>
+                        <p>901,200,000 VND has been donated</p>
+                        <ProgressBar percent="85"/>
                       </div>
                     </div>
                   </div>
                 </div>
               </Link>
 
-              <Link href="/collection" className="collectionCard">
+              <Link href="/project" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
+                    <Image src="/img/thanhDaBangCrowd.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
                       <div className="collectionName">
-                        <span>Series 1</span>
+                        <span>Game</span>
                       </div>
                       <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
+                        <p>Crowdfunding for "Thanh Da Bang"</p>
+                        <p>509,200,000 VND has been donated</p>
+                        <ProgressBar percent="50"/>
                       </div>
                     </div>
                   </div>
                 </div>
               </Link>
 
-              <Link href="/collection" className="collectionCard">
+              <Link href="/project" className="collectionCard">
                 <div className="contentContainer">
                   <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
+                    <Image src="https://cdn.tuoitre.vn/471584752817336320/data/teen360/pictures/2018/06/01/1527820268_34049718_209315449684591_7734387083845828608_n.jpg" width={500} height={500} alt="" />
                   </div>
                   <div className="bottom">
                     <div className="content">
                       <div className="collectionName">
-                        <span>Series 1</span>
+                        <span>Video</span>
                       </div>
                       <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
+                        <p>Crowdfunding for "Ung Chau Thanh"</p>
+                        <p>909,200,000 VND has been donated</p>
+                        <ProgressBar percent="90"/>
                       </div>
                     </div>
                   </div>
                 </div>
               </Link>
 
-              <Link href="/collection" className="collectionCard">
-                <div className="contentContainer">
-                  <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <div className="collectionName">
-                        <span>Series 1</span>
-                      </div>
-                      <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/collection" className="collectionCard">
-                <div className="contentContainer">
-                  <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <div className="collectionName">
-                        <span>Series 1</span>
-                      </div>
-                      <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/collection" className="collectionCard">
-                <div className="contentContainer">
-                  <div className="top">
-                    <Image src="/img/joitaro.jpg" width={500} height={500} alt="" />
-                  </div>
-                  <div className="bottom">
-                    <div className="content">
-                      <div className="collectionName">
-                        <span>Series 1</span>
-                      </div>
-                      <div className="title">
-                        <p>Ly Thuong Kiet</p>
-                        <p>Released On Oct 5th, 2002</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+              
             </div>
           </div>
 
           <div className="moreText">
-            <a href="">
+            <Link href="/projects">
               <span>
-                All Collections
+                All Projects
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
