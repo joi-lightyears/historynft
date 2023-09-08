@@ -15,14 +15,14 @@ export default function NavBar() {
     const connectWallet = async () => {
       if (typeof window.ethereum !== 'undefined' && typeof window !== 'undefined') {
         try {
-          await window.ethereum.request({ method: 'eth_requestAccounts' });
+        //   await window.ethereum.request({ method: 'eth_requestAccounts' });
           const web3Instance = new Web3(window.ethereum);
           setWeb3(web3Instance);
           const accounts = await web3Instance.eth.getAccounts();
           setAddress(accounts[0]);
           setTextBtn('Wallet Connected');
           setLoading(false); // Set loading to false after checking
-        //   console.log(address);
+          console.log(address);
         } catch (err) {
           console.log(err);
           setLoading(false); // Set loading to false even if there's an error
