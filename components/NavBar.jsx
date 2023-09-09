@@ -26,6 +26,7 @@ export default function NavBar() {
         } catch (err) {
           console.log(err);
           setLoading(false); // Set loading to false even if there's an error
+          
         }
       } else {
         setLoading(false); // Set loading to false if MetaMask is not installed
