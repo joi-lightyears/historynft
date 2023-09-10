@@ -95,6 +95,7 @@
                 border-radius: 12px;
                 // background-color: #F4BA41;
                 background: linear-gradient(315deg, #F4BA41 0%, #E28B31 100%);
+                
                 color: #000;
                 font-size: 13px;
                 font-weight: 600;
@@ -106,6 +107,18 @@
                 margin-left: 20px;
                 &:hover{
                     background: #F4BA41;
+                }
+            }
+            .signInContainer{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                svg{
+                    cursor: pointer;
+                    &:hover{
+                        filter: drop-shadow(0 0 0.75rem #F4BA41);
+                    }
                 }
             }
             // position
