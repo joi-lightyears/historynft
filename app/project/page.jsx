@@ -11,6 +11,9 @@ export default function Project() {
     const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="projectContainer">
+        <div className="background">
+            <svg id="visual" viewBox="0 0 1350 900" width="1350" height="900" version="1.1"><g fill="#E28B31"><circle r="221" cx="669" cy="365"/><circle r="97" cx="73" cy="122"/><circle r="202" cx="1328" cy="549"/><circle r="152" cx="242" cy="729"/><circle r="163" cx="997" cy="29"/></g></svg>
+        </div>
         <div className="projectWrapper">
             <div className="left">
                 {/* <iframe  src="//www.youtube.com/embed/S8NPyxWZovw?si=oba3TX51ydKMTa7D?autoplay=1" frameborder="0" allowfullscreen="true"></iframe> */}
