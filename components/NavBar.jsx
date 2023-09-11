@@ -9,28 +9,28 @@ export default function NavBar() {
   const [web3, setWeb3] = useState(null);
   const [address, setAddress] = useState(null);
   const [textBtn, setTextBtn] = useState('Connect Wallet');
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(false); // Add loading state
 
-  useEffect(() => {
-    const checkWalletConnected = async () => {
-      if (typeof window.ethereum !== 'undefined' && typeof window !== 'undefined'){
-        // check if Wallet is connected
-        const web3Instance = new Web3(window.ethereum);
-        if(web3Instance){
-          const accounts = await web3Instance.eth.getAccounts();
-          if(accounts.length > 0){
-            setWeb3(web3Instance);
-            setAddress(accounts[0]);
-            setTextBtn('Wallet Connected');
-            setLoading(false);
-          }else{
-            setLoading(false);
-          }
-        }
-      }
-    }
-    checkWalletConnected();
-  }, []);
+  // useEffect(() => {
+  //   const checkWalletConnected = async () => {
+  //     if (typeof window.ethereum !== 'undefined' && typeof window !== 'undefined'){
+  //       // check if Wallet is connected
+  //       const web3Instance = new Web3(window.ethereum);
+  //       if(web3Instance){
+  //         const accounts = await web3Instance.eth.getAccounts();
+  //         if(accounts.length > 0){
+  //           setWeb3(web3Instance);
+  //           setAddress(accounts[0]);
+  //           setTextBtn('Wallet Connected');
+  //           setLoading(false);
+  //         }else{
+  //           setLoading(false);
+  //         }
+  //       }
+  //     }
+  //   }
+  //   checkWalletConnected();
+  // }, []);
 
   const handleConnectWallet = async () => {
     if (typeof window.ethereum !== 'undefined' && typeof window !== 'undefined') {
