@@ -3,7 +3,49 @@ import Image from 'next/image'
 import "../styles/navbar.scss"
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import Web3 from 'web3';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+// import Web3 from 'web3';
+
+// rainbowkit
+import '@rainbow-me/rainbowkit/styles.css';
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  darkTheme
+} from '@rainbow-me/rainbowkit';
+import { configureChains, createConfig, WagmiConfig } from 'wagmi';
+import {
+  mainnet,
+  polygon,
+  optimism,
+  arbitrum,
+  base,
+  zora,
+} from 'wagmi/chains';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+
+const { chains, publicClient } = configureChains(
+  [mainnet, polygon, optimism, arbitrum, base, zora],
+  [
+    alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
+    publicProvider()
+  ]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: 'historynft',
+  projectId: 'f83c7641ae16ed596eeb53a49b6f1a20',
+  chains
+});
+
+const wagmiConfig = createConfig({
+  autoConnect: true,
+  connectors,
+  publicClient
+})
+
+
 
 export default function NavBar() {
   const [web3, setWeb3] = useState(null);
@@ -34,29 +76,20 @@ export default function NavBar() {
   //   checkWalletConnected();
   // }, []);
 
-  const handleConnectWallet = async () => {
-    if (typeof window.ethereum !== 'undefined' && typeof window !== 'undefined') {
-      try {
-        setLoading(true); // Set loading to true when connecting
-        await window.ethereum.request({ method: 'eth_requestAccounts' });
-        const web3Instance = new Web3(window.ethereum);
-        setWeb3(web3Instance);
-        const accounts = await web3Instance.eth.getAccounts();
-        setAddress(accounts[0]);
-        setTextBtn('Wallet Connected');
-        // console.log(address);
-        setLoading(false); // Set loading to false after connecting
-      } catch (err) {
-        console.log(err);
-        setLoading(false); // Set loading to false if there's an error
-      }
-    } else {
-      alert('Please install MetaMask!');
-      setLoading(false); // Set loading to false if MetaMask is not installed
-    }
-  }
+  // const handleConnectWallet = async () => {
+    
+  // }
 
   return (
+    <WagmiConfig config={wagmiConfig}>
+      <RainbowKitProvider chains={chains}
+      theme={darkTheme({
+        accentColor: '#E28B31',
+        accentColorForeground: 'white',
+        borderRadius: 'large',
+        
+      })}
+      >
     <div className="navContainer">
       <div className="navBar">
         <div className="navBarLeft">
@@ -81,7 +114,8 @@ export default function NavBar() {
         <div className="navBarRight">
           <div className="account">
             <div className="signInContainer">
-              <button className="signInBtn" onClick={handleConnectWallet} disabled={loading}>
+              <ConnectButton />
+              {/* <button className="signInBtn" onClick={handleConnectWallet} disabled={loading}>
                 {loading ? 'Connecting...' : textBtn}
               </button>
               <svg width="26px" height="47px" viewBox="0 0 256 417" version="1.1" preserveAspectRatio="xMidYMid">
@@ -93,12 +127,14 @@ export default function NavBar() {
                   <polygon fill="#E28B31" points="127.9611 287.9577 255.9211 212.3207 127.9611 154.1587"/>
                   <polygon fill="#8f6538" points="0.0009 212.3208 127.9609 287.9578 127.9609 154.1588"/>
                 </g>
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
       </div>
     </div>
+    </RainbowKitProvider>
+    </WagmiConfig>
   );
 }
 

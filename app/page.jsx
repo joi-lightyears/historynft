@@ -3,6 +3,8 @@ import "../styles/home.scss"
 import Link from 'next/link'
 import ProgressBar from '@/components/ProgressBar'
 
+
+
 export default function Home() {
   return (
     <main className="mainPageContainer">
